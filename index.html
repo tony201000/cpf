@@ -69,7 +69,7 @@
             var montantApresCommission = montantApresTaxe - 100;
             var montantFinal = montantApresCommission / 2;
             var resultatFinal = Math.floor(montantFinal / 100) * 100;
-            document.getElementById("resultat").innerText = "Le résultat est : " + resultatFinal + " baht";
+            document.getElementById("resultat").innerText = "En Cash tu toucheras la somme de " + resultatFinal + " euros";
         }
     </script>
 </head>
@@ -77,7 +77,7 @@
     <div class="container">
         <h1>Calcul de Montant</h1>
         <form onsubmit="event.preventDefault(); calculerMontant();">
-            <label for="montantInitial">Montant initial (en baht) :</label>
+            <label for="montantInitial">Montant initial du CPF (en euros) :</label>
             <input type="number" id="montantInitial" name="montantInitial" required>
             <button type="submit">Calculer</button>
         </form>
